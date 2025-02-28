@@ -47,7 +47,7 @@ public class DateTimeFunctions {
 	 */
 	public static LocalDate getPreviousDatebyWeeks(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
-		int daysInXWeeks = 7 * x;
+		int daysInXWeeks = 7 * x; // Since there's 7 days in a week, multiplying by x amount of weeks
 		LocalDate laterDate = date.minusDays(daysInXWeeks);
 		return laterDate;
 		//YOUR CODE ENDS HERE
